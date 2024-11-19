@@ -14,7 +14,7 @@ public class Program {
 	
 	
 			if (primeNumber < 2)
-				System.out.println("IllegalArgument");
+				System.err.println("IllegalArgument");
 			else {
 				int i = 2;
 				for (i = 2; i * i <= primeNumber; i++) {
@@ -30,7 +30,7 @@ public class Program {
 			}
 		}
 		catch(InputMismatchException e) {
-			System.out.println("IllegalArgument");
+			System.err.println("IllegalArgument");
 		}
 		in.close();
 	}
